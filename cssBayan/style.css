@@ -120,3 +120,96 @@ button {
 .bayan__input:checked ~ .bayan__title {
     color: black;
 }
+
+@media (hover: hover) {
+    svg {
+        display: none;
+    }
+
+    .bayan:hover {
+        color: black;
+    }
+
+    .bayan:hover .bayan__item > .bayan__title > .title__container svg {
+        display: block;
+    }
+
+    .bayan__item:hover > .bayan__title > .bayan__img{
+        height: 25rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+
+     }
+     
+     .bayan__item:hover > .bayan__title > .title__container svg{
+         transform: rotate(45deg);
+      }
+
+      .bayan__img img:hover {
+        opacity: 0.7;
+      }
+}
+
+@media (min-width: 320px) {
+    .topic {
+        font-size: 2.1rem;
+    }
+
+    .title__container > span {
+        font-size: 1.7rem;
+        letter-spacing: 110%;
+    }
+}
+
+@media (min-width: 820px) {
+    .topic {
+        font-size: 2.6rem;
+    }
+
+    .bayan__img img {
+        min-width: 18rem; 
+    }
+
+    .title__container > span {
+        font-size: 2.3rem;
+    }
+}
+
+@media (min-width: 1300px) {
+    svg {
+        display: none;
+    }
+
+    .bayan:hover {
+        color: black;
+    }
+
+    .bayan:hover .bayan__item > .bayan__title > .title__container svg {
+        display: block;
+    }
+
+    .bayan__item:hover > .bayan__title > .bayan__img{
+        height: 25rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+
+     }
+     
+     .bayan__item:hover > .bayan__title > .title__container svg{
+         transform: rotate(45deg);
+      }
+}
+
+@media (min-width: 1920px) {
+    .topic {
+        font-size: 3.5rem;
+    }
+
+    .title__container > span {
+        font-size: 3rem;
+    }
+}
+
+.bayan__item:active .bayan__img img {
+    opacity: 0.7;
+ }
